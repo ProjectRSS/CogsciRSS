@@ -1,5 +1,20 @@
 source 'https://rubygems.org'
+ruby '2.1.1'
 
+group :development, :test do
+	gem 'rspec-rails'
+	gem 'guard-rspec'
+end
+
+group :test do
+	gem 'selenium-webdriver'
+	gem 'capybara'
+	gem 'factory_girl_rails'
+end
+
+gem 'bootstrap-sass'
+gem 'sprockets'
+gem 'bcrypt-ruby'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
 
