@@ -4,12 +4,14 @@ ruby '2.1.1'
 group :development, :test do
 	gem 'rspec-rails'
 	gem 'guard-rspec'
+	gem 'factory_girl_rails'
 end
 
 group :test do
+	gem 'faker'
 	gem 'selenium-webdriver'
 	gem 'capybara'
-	gem 'factory_girl_rails'
+	gem 'launchy'
 end
 
 gem 'bootstrap-sass'
