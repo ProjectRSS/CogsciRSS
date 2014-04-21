@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+	has_many :RssFeeds
 	before_save {self.email=email.downcase}
 	validates(:email, presence:true)
 	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i

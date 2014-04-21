@@ -24,6 +24,7 @@ describe User do
 			end
 		end
  	end
+
 	describe "when password is not present" do
 		before do
 			@user = User.new( email: "user@example.com", password: "", password_confirmation: "")
@@ -44,6 +45,7 @@ describe User do
 		before { @user.password = @user.password_confirmation = "a" * 5}
 		it {should be_invalid}
 	end
+
 	describe "when password doesnt match confirmation" do
 		before { @user.password_confirmation = "bsadfasdf" }
 		it {should_not be_valid}
