@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140421161728) do
+ActiveRecord::Schema.define(version: 20140423081149) do
 
   create_table "entries", force: true do |t|
     t.string   "title"
@@ -25,6 +25,11 @@ ActiveRecord::Schema.define(version: 20140421161728) do
     t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "rss_feeds_users", id: false, force: true do |t|
+    t.integer "rss_feed_id"
+    t.integer "user_id"
   end
 
   create_table "users", force: true do |t|
