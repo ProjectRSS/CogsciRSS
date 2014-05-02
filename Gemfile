@@ -14,6 +14,10 @@ group :test do
 	gem 'launchy'
 end
 
+gem 'feedjira'
+gem 'nokogiri'
+gem 'treat'
+
 gem 'bootstrap-sass'
 gem 'sprockets'
 gem 'bcrypt-ruby'
@@ -51,6 +55,7 @@ end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+
 
 # Use unicorn as the app server
 # gem 'unicorn'
